@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus UII - Mapa Interactivo</title>
+  <style>
+    /* Reset de márgenes */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #ffffff;
+      font-family: LT Saeada, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #0c3566;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      flex: 1;
+      text-align: center;
+    }
+
+    header span {
+      font-size: 1rem;
+      position: absolute;
+      right: 30px;
+    }
+
+    /* Imagen centrada */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100% - 70px); /* resta la altura del header */
+    }
+
+    main img {
+      max-width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div></div> <!-- espacio para alinear bien -->
+    <h1>Campus UII</h1>
+    <span>Mapa Interactivo</span>
+  </header>
+
+  <main>
+    <img src="mantenimiento.png" alt="Página en mantenimiento">
+  </main>
+</body>
+</html>
