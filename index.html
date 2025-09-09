@@ -51,7 +51,7 @@
       display: none;
       position: absolute;
       background-color: white;
-      min-width: 160px;
+      min-width: 180px;
       box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
       z-index: 1;
     }
@@ -72,19 +72,25 @@
       display: block;
     }
 
+    /* Campus UII como enlace */
     header h1 {
       margin: 0;
       font-size: 1.8rem;
       flex: 1;
       text-align: center;
-      font-weight: 600; /* más destacado */
+      font-weight: 600;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: white;
     }
 
     header span {
       font-size: 1.1rem;
       position: absolute;
       right: 30px;
-      font-weight: 400; /* más ligero */
+      font-weight: 400;
     }
 
     /* Imagen centrada */
@@ -96,7 +102,7 @@
     }
 
     main img {
-      max-width: 80%;
+      max-width: 100%;
       height: auto;
     }
   </style>
@@ -107,15 +113,17 @@
     <div class="dropdown">
       <button class="dropbtn">Secciones</button>
       <div class="dropdown-content">
-        <a href="#">Auditorio</a>
-        <a href="#">CIPAV</a>
-        <a href="#">DAF / DCA</a>
-        <a href="#">Rectoría</a>
-        <a href="#">Edificio Central</a>
+        <a href="auditorio.html">Auditorio</a>
+        <a href="cipav.html">CIPAV</a>
+        <a href="daf-dca.html">DAF / DCA</a>
+        <a href="rectoria.html">Rectoría</a>
+        <a href="edificio-central.html">Edificio Central</a>
       </div>
     </div>
 
-    <h1>Campus UII</h1>
+    <!-- Campus UII como enlace a la principal -->
+    <h1><a href="index.html">Campus UII</a></h1>
+
     <span>Mapa Interactivo</span>
   </header>
 
@@ -124,4 +132,3 @@
   </main>
 </body>
 </html>
-
