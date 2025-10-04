@@ -17,8 +17,9 @@ d3.json("map.json").then(function(data) {
     .attr("class", "room")
     .attr("d", path)
     .on("click", function(event, d) {
-      alert("Diste click en: " + d.properties.name);
+      //alert("Diste click en: " + d.properties.name);
       // Para redirigir a otra página:
-      // window.location.href = d.properties.link;
+      window.location.href = d.properties.link;
     });
 });
+
