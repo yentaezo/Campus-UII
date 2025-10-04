@@ -105,6 +105,23 @@
       max-width: 100%;
       height: auto;
     }
+    
+    svg {
+      width: 600px;
+      height: 400px;
+      border: 1px solid #ccc;
+    }
+    
+    .room {
+      fill: #e0e0e0;
+      stroke: #333;
+      stroke-width: 1px;
+      cursor: pointer;
+    }
+    
+    .room:hover {
+      fill: orange;
+    }
   </style>
 </head>
 <body>
@@ -127,8 +144,18 @@
     <span>Mapa Interactivo</span>
   </header>
 
+  <svg id="map"></svg>
+
+  <!-- Librerías -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+  <!-- Tu script -->
+  <script src="script.js"></script>
+  
+<!--
   <main>
     <img src="mantenimiento.png" alt="Página en mantenimiento">
-  </main>
+  </main>-->
 </body>
 </html>
+
